@@ -1,4 +1,4 @@
-export * as Button './componets/Button'
+import * as Button from './componets/Button'
 
 export default {
   ...Button
