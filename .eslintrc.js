@@ -36,6 +36,7 @@ module.exports = {
             1,
             "never"
         ],
+        "no-mixed-spaces-and-tabs" : 0,
         "react/jsx-boolean-value": 1,
         "react/jsx-closing-bracket-location": 1,
         "react/jsx-curly-spacing": 1,
