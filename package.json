@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/react-design/react-native-ui/issues"
   },
-  "homepage": "https://github.com/react-design/react-native-ui#readme"
+  "homepage": "https://github.com/react-design/react-native-ui#readme",
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-plugin-react": "^5.2.2"
+  }
 }
