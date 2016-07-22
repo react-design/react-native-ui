@@ -20,7 +20,7 @@ module.exports = {
     "parser": "babel-eslint",
     "rules": {
         "indent": [
-            1,
+            0,
             "tab",
             {"SwitchCase": 1}
         ],
@@ -33,9 +33,11 @@ module.exports = {
             "single"
         ],
         "semi": [
-            1,
+            0,
             "never"
         ],
+				"no-unused-vars":0,
+				"no-console" : 1,
         "no-mixed-spaces-and-tabs" : 0,
         "react/jsx-boolean-value": 1,
         "react/jsx-closing-bracket-location": 1,

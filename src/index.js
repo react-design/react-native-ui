@@ -1,5 +1,1 @@
-import * as Button from './componets/Button'
-
-export default {
-  ...Button
-}
+export { default as Button } from './components/Button'
