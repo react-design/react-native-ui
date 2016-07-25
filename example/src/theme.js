@@ -1,4 +1,8 @@
-export const PRIMARY_COLORS = ['googleBlue', 'googleGreen', 'googleGrey', 'googleRed', 'googleYellow', 'paperAmber',
-    'paperBlue', 'paperBlueGrey', 'paperBrown', 'paperCyan', 'paperDeepOrange', 'paperDeepPurple', 'paperGreen',
-    'paperGrey', 'paperIndigo', 'paperLightBlue', 'paperLightGreen', 'paperLime', 'paperOrange', 'paperPink',
-    'paperPurple', 'paperRed', 'paperTeal', 'paperYellow'];
+export const PRIMARY_COLORS = {
+	default : '#e6e6e6',
+	primary : '#0e90d2',
+	secondary : '#3bb4f2',
+	success : '#5eb95e',
+	warning : '#F37B1D',
+	danger : '#dd514c'
+};

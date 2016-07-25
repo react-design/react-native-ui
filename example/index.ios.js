@@ -12,7 +12,6 @@ import {
   View
 } from 'react-native';
 import { Button } from './src'
-console.log(Button)
 class RNUI extends Component {
   render() {
     return (
@@ -20,7 +19,9 @@ class RNUI extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native UI!
         </Text>
-				<Button />
+				<Button
+					className='btnPrimary'
+				/>
       </View>
     );
   }

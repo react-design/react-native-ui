@@ -6,17 +6,15 @@ import {
   View,
 } from 'react-native';
 
-import config from '../../config';
+import styles from './styles'
 
 class Button extends Component{
 	render(){
 		const { props } = this;
 		return (
 			<TouchableOpacity
-				style={[styles.btn,{
-					backgroundColor:props.backgroundColor,
-					padding:props.padding
-				}]}
+				style={[styles.btnDefault,styles[props.className],props.style]}
+				onPress={ props.disabled ? null : ()=> {props.onPress(props.onPressParams)}}
 			>
 				<Text
 					style={[styles.text]}
@@ -29,19 +27,16 @@ class Button extends Component{
 }
 
 Button.defaultProps = {
-	radius : 4,
-	backgroundColor : config.color.googleBlue,
 	text : 'im is button',
-	padding : 10
+	onPressParams : 'pressing',
+	disabled : false,
+	onPress (params){
+		console.log(`pressing\nparmas:${params}`)
+	}
 }
 
-const styles = StyleSheet.create({
-	btn : {
-		borderRadius : 4
-	},
-	text : {
-		fontSize : 14
-	}
-})
+Button.propType = {
+
+}
 
 export default Button
